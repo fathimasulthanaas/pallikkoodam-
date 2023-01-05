@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: deeppink;
+            text-align: center;
+        }
+        .container{
+            text-align: center;
+        }
+        #button{
+            background-color: blueviolet;
+            border: none;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px rebeccapurple;
+            transition-duration: 0.5s;
+        }
+        #button:hover{
+            background-color: aqua;
+            box-shadow: -5px -5px -5px rebeccapurple;
+            transform: scale(0.9);     
+            animation-name: animation;
+            animation-duration: 2s;
+        }
+        @keyframes animation{
+            20%{transform: scale(1.1)}
+            40%{transform: scale(0.9)}
+            80%{transform: scale(1)}
+        }
+    </style>
+</head>
+<body>
+    <h1>REGISTRATION</h1>
+    <table>
+    <tr>
+        <td>
+             <label>Name</label>
+        </td>
+        <td>
+            <input type="text" name="name" id="user">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Address</label></td>
+        <td><textarea id="data" cols="10" rows="5">
+        </textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <label>Email</label>
+        </td>
+      <td>
+            <input type="email" name="mail" id="email">
+     </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Phone No</label></td>
+           <td><input type="text" name="num" id="number"></td></tr>
+            <tr><td>
+            <div class="container">
+            <input type="button" value="REGISTER" id="button"></div></td></tr>
+    </table>
+</body>
+</html>

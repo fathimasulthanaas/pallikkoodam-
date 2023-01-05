@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button{
+            background-color: rgb(165, 135, 193);
+            border: none;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px rebeccapurple;
+            transition-duration: 0.5s;
+        }
+        button:hover{
+            background-color: aqua;
+            box-shadow: -5px -5px -5px rebeccapurple;
+            transform: scale(0.9);     
+            animation-name: animation;
+            animation-duration: 2s;
+        }
+        @keyframes animation{
+            20%{transform: scale(1.1)}
+            40%{transform: scale(0.9)}
+            80%{transform: scale(1)}
+        }
+    </style>
+</head>
+<body>
+    <img src="images/img.jpg" height="500"alt="">
+    <button>click here</button>
+    <form>
+        <br><label>name</label>
+        <input type="text" name="data" id="data">
+    </br>
+        <label for="data">name</label>
+        <input type="text" name="data" id="data">
+        <input type="submit" value="save">
+        <br>
+        <label for="data">name</label>
+        <input type="search" name="data" id="data">
+        <input type="submit" value="save">
+        <br>
+        <label for="data">name</label>
+        <input type="range" min="1" max="10" step="2" name="data" id="data">
+        <input type="submit" value="save">
+        <br>
+        <label for="data">name</label>
+        <input type="color" name="data" id="data">
+        <input type="submit" value="save">
+        <br>
+        <label for="data">name</label>
+        <input type="url" name="data" id="data">
+        <input type="submit" value="save">
+        <br>
+        <label for="data">name</label>
+        <input type="hidden" name="data" id="data">
+        <input type="submit" value="save">
+        <br>
+        <label for="data">name</label>
+        <input type="date" name="data" id="data">
+        <input type="submit" value="save">
+        <br>
+        <label for="data">name</label>
+        <input type="time" name="data" id="data">
+        <input type="submit" value="save">
+        <br>
+        <label for="data">name</label>
+        <input type="datetime-local" name="data" id="data">
+        <input type="submit" value="save">
+        <br>
+        <label for="data">name</label>
+        <input type="checkbox" name="data" id="data">
+        <input type="submit" value="save">
+        <br>
+        <label for="data">name</label>
+        <textarea name="data" id="data" cols="10" rows="5">
+            type something
+        </textarea>
+        <input type="submit" value="save">
+        <br>
+        <label for="data">name</label>
+        <select name="data" id="data">
+            <optgroup label="Interpreted">
+                <option value="js">javascript</option>
+                <option value="php">php</option>
+                <option value="python" selected>python</option>
+            <optgroup label="Compiled">
+                <option value="c">C</option>
+                <option value="cpp" disabled>C++</option>
+            </optgroup>
+            </optgroup>
+        </select>
+        <input type="submit" value="save">
+    </form>
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h6>heading 6</h6>
+    <h5>heading 5</h5>
+    <b>bold</b>
+    <i>italic</i>
+    <u>undrline</u>
+    <p>ABCDEFGHIJ<wbr>KLMNOPQ<wbr>RSTUVW<wbr>XYZ</p>
+    <ol start="26" type="A">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ol>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <ul>
+            <li>thirty</li>
+            <li>thirty one</li>
+            <li>thirty two</li>
+        </ul>
+    </ul>
+    <table border="2">
+        <caption>TABLE</caption>
+        <thead>
+            <tr>
+                <td>id</td>
+                <td>name</td>
+                <td>email</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">1</td>
+                <td>user 1</td>
+                <td>abc@gmail.com</td>
+            </tr>
+            <tr>
+                <td colspan="2">def@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
