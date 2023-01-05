@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+                 <!--CONNECT JAVASCRIPT WITH HTML-->
+    <script>
+        let data = 'A Message From JS';
+        console.log(data);
+    </script>
+
+    <!-- //..............................................................................................// -->
+    
+    <script>
+        let data1 = 'A Message From JS 1';
+        console.log(data1);
+    </script>
+
+    <!-- //..............................................................................................// -->
+     
+     <script>
+        console.log(data);
+    </script>
+    <!-- <script>
+        var data2 = {
+           message: 'Hello World',
+           language: 'English'
+        } 
+        console.log(data2);
+    </script> -->
+    <script>
+        var data2 = {
+           message: 'Hello World',
+           language: 'English'
+        } 
+        console.table(data2); //display as table
+    </script>
+
+    <!-- -------------------------------------------------------------------------------------------------- -->
+
+    <script>
+        console.log('this is a message.');
+        console.info('Login was successful.');
+        console.warn('Password is not strong enough...');
+        console.error('An error occured.');
+        console.table(['One', 'Two', 'Three']);
+    </script>
+
+    <!-- -------------------------------------------------------------------------------------------------- -->
+
+    <p>This is a paragraph.</p>
+    <script>
+        console.logg('This is a message');
+    </script>
+    <script>
+       console.log('Final message');
+    </script>
+
+    <!-- -------------------------------------------------------------------------------------------------- -->
+
+    <!-- <p>This is a message.</p>
+    <script>
+        alert('This is an alert from JS');     //NEVER WRITE MULTIPLE ALERT MESSAGES//
+    </script> -->
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
+
+<!-- <p>This is a message.</p>
+    <script>
+       let option = confirm('Do you want to log out ?');      IF SELECT 'OK'   --= TRUE;     IF SELECT CANCEL  --=  FALSE;
+              console.log(option);
+       if(option){
+        console.log('User logged out successfully');
+       }   
+    </script> -->
+
+    <!-- -------------------------------------------------------------------------------------------------- -->
+
+    <!-- <p>This is a message.</p>
+    <script>
+        const name = prompt('Enter your name: ');
+        console.log('You are', name);   
+    </script> -->
+
+    <!-- -------------------------------------------------------------------------------------------------- -->
+
+    <!-- <p>default content</p>
+    <script>
+        document.write('<h1>Hello World</h1>');
+    </script> -->
+
+    <!-- -------------------------------------------------------------------------------------------------- -->
+
+    <!-- <p id= "p1">default content</p>
+    <script>
+        const element = document.getElementById('p1');
+        // console.log(element);
+        // element.innerText = 'New Element';     //enter new value
+        console.log(element.innerText);           //to get the value
+    </script> -->
+
+    <!-- -------------------------------------------------------------------------------------------------- -->
+
+                 <!-- DOCUMENT OBJECT MODEL(DOM)       (like css in html) -->
+            <!--.............................................-->
+     <p id= "p1">default content</p>
+    <!-- <script> 
+        const element = document.getElementById('p1');
+       element.style.color = 'red';          
+    </script> -->
+
+    <!-- -------------------------------------------------------------------------------------------------- -->
+
+    <!-- <p id= "p1" style= "color: green;">default content</p>
+    <script>
+        const element = document.getElementById('p1');
+        console.log(element.style.color);          
+    </script> -->
+
+    <!-- -------------------------------------------------------------------------------------------------- -->
+
+    <script>
+        let e = document.getElementById('p1');
+        e.style.color = 'blue';
+        e.style.fontSize = '25px';
+        e.style.textAlign = 'center';
+        e.style.fontWeight = 'bold';
+    </script>
+
+    <!-- -------------------------------------------------------------------------------------------------- -->
+
+    <!-- <button onclick="handleclick()">Click me</button>
+    <script>
+        function handleclick() {
+            console.log('button clicked');
+            alert('Button clicked');   
+        }
+    </script> -->
+
+    <!-- -------------------------------------------------------------------------------------------------- -->
+
+     <!-- <button onclick="handleclick(event)">Click me</button>
+    <button onclick="handleclick(event)">Click me</button> -->
+    <!-- <p onclick="handleclick(event)">This is a paragraph.</p>
+    <script>
+        function handleclick(e) {
+         console.log(e);
+            // alert('Button clicked'); 
+            e.target.innerText = 'Clicked';          //after clicking , the button "Click Me" changes to "Clicked".
+            e.target.style.color = 'green';  
+        }
+    </script> -->
+
+    <!-- -------------------------------------------------------------------------------------------------- -->
+
+    <!-- <p> First paragraph</p>
+    <p> Second paragraph</p>
+    <script>
+        var el = document.getElementsByTagName('p');
+        for (let i = 0; i < el.length; i++) {
+            const element = el[i];
+            element.innerText = 'New Text';  
+        }
+    </script> -->
+
+    <!-- -------------------------------------------------------------------------------------------------- -->
+
+    <!-- <p id="p2" style="color: red"> First paragraph</p>
+    <p> Second paragraph</p>
+    <p> Third paragraph</p>
+    <p> fourth paragraph</p>
+    <script>
+       document.getElementById('p2').removeAttribute('style');             //remove the attribute we given inside the removeAttribute();
+    </script> -->
+
+    <!-- -------------------------------------------------------------------------------------------------- -->
+
+    <!-- <input id="test" type="checkbox" >Select this
+    <br>
+    <input type="text" id="email" value="ewarsfg">
+
+    <script>
+        document.getElementById('test').setAttribute('checked', 'checked');
+        document.getElementById('email').setAttribute('value', 'me@gmail.com');
+    </script> -->
+
+    <!-- -------------------------------------------------------------------------------------------------- -->
+
+    <input type="text" id="email" value="ewstgv">
+
+    <script>
+        let res = document.getElementById('email').getAttribute('type');
+        document.write(res);
+    </script>
+
+    <!-- -------------------------------------------------------------------------------------------------- -->
+
+</body>
+</html>

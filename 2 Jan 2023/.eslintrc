@@ -1,0 +1,23 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
+    "env": {
+        "browser": true
+    },
+    "extends": [
+        "eslint:recommended"
+    ],
+     "rules": {
+        //  "no-console":"off",
+        // "no-undef":"off",
+        "prefer-const":"warn",
+        "camelcase": "warn",
+       // "quotes": ["1, backtick"],      //backtick = `
+       "quotes": [1, "single"],
+        "spaced-comment":"warn",
+        "semi":"error",
+        "space-infix-ops":"warn"
+        
+     }
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- //<input type="text" onclick="executeEvent(e)" tabindex="1"/>
+     //<input type="text" onfocus="executeEvent(e)" tabindex="1"/>
+
+
+    <script>
+        function executeEvent(e){
+            console.log(e);
+        }
+    </script> -->
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
+     
+<!-- <input type="text"  tabindex="1" id="target" onfocus="executeEvent(e)"/>            //can use onclick also
+<button onclick="selectTextBox()">Select Text Box</button>
+<script>
+    const target = document.getElementById('target');
+
+    function selectTextBox(){
+        target.focus();
+    }
+
+    function executeEvent(e){
+       console.log(e);
+    }
+</script>  -->
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
+
+<!-- <input type = "text" id = "target" onkeyup = "executeEvent(event)"/>
+<h1 id = "result"></h1>
+
+<script>
+    const res = document.getElementById('result');
+    function executeEvent(e){
+        res.innerText = e.target.value;
+    }
+</script> -->
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
+
+<!-- <div id="button" style="height: 150px;background-color: blueviolet;"></div>
+<input type="range" min="10" max="100" value="=50" onchange="executeEvent(event)">
+<script>
+    const btn = document.getElementById('button');
+    function executeEvent(e){
+        btn.style.width = `${e.target.value}px`;
+    }
+</script> -->
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
+
+<!-- <button>Click Me</button>
+<button>Click Me</button>
+<div>
+    <button>Click Me</button>
+    <button class="btn">Click Me</button>
+    <button class="btn">Click Me</button>
+</div>
+
+<script>
+    const buttons = document.querySelectorAll('div .btn');
+    buttons.forEach(btn=>{
+        btn.style.backgroundColor = 'teal';
+    })
+</script> -->
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
+
+<!-- <button>Click Me</button>
+<button>Click Me</button>
+<button>Click Me</button>
+<button>Click Me</button>
+<button>Click Me</button>
+
+<script>
+    document.querySelectorAll('button').forEach(btn=>{
+        btn.addEventListener('click', (e)=>{
+        e.target.innerText = 'Clicked';
+        })
+    })
+</script> -->
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
+
+<!-- <script>
+    var tag = document.createElement('h1');
+    tag.innerText = 'H1 Tag';
+    document.body.appendChild(tag);
+</script> -->
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
+
+<!-- <div>
+    <h1 id="target">Main heading</h1>
+    <p>Paragraph 1</p>
+</div>
+
+<script>
+    const target = document.querySelector('#target');
+    console.log(target.parentElement);
+</script> -->
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody id="content">
+
+    </tbody>
+</table>
+
+<script>
+    const users = [
+        {
+            name: 'User 1',
+            email: 'user1@gmail.com'
+        },
+        {
+            name: 'User 2',
+            email: 'user2@gmail.com'
+        }
+        // {
+        //     name: 'User 3',
+        //     email: 'user3@gmail.com'
+        // }
+   ];
+   const target = document.getElementById('content');
+   users.forEach(user=>{
+        const row = `<tr>
+                        <td>${user.name}</td>
+                        <td>${user.email}</td>
+                        <td>
+                            <button onclick="deleteRw(event)" >Delete</button>
+                    </tr>`;
+        target.innerHTML += row;                 
+   })
+//    var i = e.parentnode.parentnode.rowIndex;
+   function deleteRw(e){
+    let option = confirm('Do you want to delete this row?');     
+       if(option == true){
+        e.target.parentElement.parentElement.remove();
+       }
+    }
+    </script>        
+
+</script>
+</body>
+</html>
